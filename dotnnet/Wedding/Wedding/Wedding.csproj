@@ -29,6 +29,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -199,13 +202,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TodoController.cs" />
-    <Compile Include="Controllers\TodoListController.cs" />
-    <Compile Include="Controllers\WeddingController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
-    <Compile Include="Filters\ValidateHttpAntiForgeryTokenAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -401,40 +398,38 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\Wedding\.gitattributes" />
-    <Content Include="Views\Wedding\.gitignore" />
-    <Content Include="Views\Wedding\apple-touch-icon-114x114-precomposed.png" />
-    <Content Include="Views\Wedding\apple-touch-icon-144x144-precomposed.png" />
-    <Content Include="Views\Wedding\apple-touch-icon-57x57-precomposed.png" />
-    <Content Include="Views\Wedding\apple-touch-icon-72x72-precomposed.png" />
-    <Content Include="Views\Wedding\apple-touch-icon-precomposed.png" />
-    <Content Include="Views\Wedding\apple-touch-icon.png" />
-    <Content Include="Views\Wedding\css\edwasai.svg" />
-    <Content Include="Views\Wedding\css\edwasaib.svg" />
-    <Content Include="Views\Wedding\css\futuralt-bold-webfont.svg" />
-    <Content Include="Views\Wedding\css\futuralt-book-webfont.svg" />
-    <Content Include="Views\Wedding\css\futuralt-webfont.svg" />
-    <Content Include="Views\Wedding\css\main-1.6.css" />
-    <Content Include="Views\Wedding\css\normalize.min.css" />
-    <Content Include="Views\Wedding\favicon.ico" />
-    <Content Include="Views\Wedding\img\bg-pic.jpg" />
-    <Content Include="Views\Wedding\img\bradThumb.jpg" />
-    <Content Include="Views\Wedding\img\heart-large.png" />
-    <Content Include="Views\Wedding\img\onknee-large.jpg" />
-    <Content Include="Views\Wedding\img\onknee-medium.jpg" />
-    <Content Include="Views\Wedding\img\onknee-small.jpg" />
-    <Content Include="Views\Wedding\img\sarahThumb.jpg" />
-    <Content Include="Views\Wedding\img\theinn-large.png" />
-    <Content Include="Views\Wedding\index-with-bridal-party.html" />
-    <None Include="Views\Wedding\index.cshtml" />
-    <Content Include="Views\Wedding\js\main-1.6.js" />
-    <Content Include="Views\Wedding\js\vendor\jquery-1.9.1.min.js" />
-    <Content Include="Views\Wedding\js\vendor\jquery-picture-min.js" />
-    <Content Include="Views\Wedding\js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
-    <Content Include="Views\Wedding\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
-    <Content Include="Views\Wedding\js\vendor\waypoints.min.js" />
-    <Content Include="Views\Wedding\LICENSE.txt" />
-    <Content Include="Views\Wedding\preview.png" />
+    <Content Include="Views\Home\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="Views\Home\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="Views\Home\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="Views\Home\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="Views\Home\apple-touch-icon-precomposed.png" />
+    <Content Include="Views\Home\apple-touch-icon.png" />
+    <Content Include="Views\Home\css\edwasai.svg" />
+    <Content Include="Views\Home\css\edwasaib.svg" />
+    <Content Include="Views\Home\css\futuralt-bold-webfont.svg" />
+    <Content Include="Views\Home\css\futuralt-book-webfont.svg" />
+    <Content Include="Views\Home\css\futuralt-webfont.svg" />
+    <Content Include="Views\Home\css\main-1.6.css" />
+    <Content Include="Views\Home\css\normalize.min.css" />
+    <Content Include="Views\Home\favicon.ico" />
+    <Content Include="Views\Home\img\bg-pic.jpg" />
+    <Content Include="Views\Home\img\bradThumb.jpg" />
+    <Content Include="Views\Home\img\heart-large.png" />
+    <Content Include="Views\Home\img\onknee-large.jpg" />
+    <Content Include="Views\Home\img\onknee-medium.jpg" />
+    <Content Include="Views\Home\img\onknee-small.jpg" />
+    <Content Include="Views\Home\img\sarahThumb.jpg" />
+    <Content Include="Views\Home\img\theinn-large.png" />
+    <Content Include="Views\Home\index-with-bridal-party.html" />
+    <None Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Home\js\main-1.6.js" />
+    <Content Include="Views\Home\js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="Views\Home\js\vendor\jquery-picture-min.js" />
+    <Content Include="Views\Home\js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
+    <Content Include="Views\Home\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="Views\Home\js\vendor\waypoints.min.js" />
+    <Content Include="Views\Home\LICENSE.txt" />
+    <Content Include="Views\Home\preview.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -465,39 +460,27 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_UserSettings.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_Login.cshtml" />
-    <Content Include="Views\Home\_Register.cshtml" />
-    <Content Include="Views\Wedding\css\edwasai.eot" />
-    <Content Include="Views\Wedding\css\edwasai.ttf" />
-    <Content Include="Views\Wedding\css\edwasai.woff" />
-    <Content Include="Views\Wedding\css\edwasaib.eot" />
-    <Content Include="Views\Wedding\css\edwasaib.ttf" />
-    <Content Include="Views\Wedding\css\edwasaib.woff" />
-    <Content Include="Views\Wedding\css\futuralt-bold-webfont.eot" />
-    <Content Include="Views\Wedding\css\futuralt-bold-webfont.ttf" />
-    <Content Include="Views\Wedding\css\futuralt-bold-webfont.woff" />
-    <Content Include="Views\Wedding\css\futuralt-book-webfont.eot" />
-    <Content Include="Views\Wedding\css\futuralt-book-webfont.ttf" />
-    <Content Include="Views\Wedding\css\futuralt-book-webfont.woff" />
-    <Content Include="Views\Wedding\css\futuralt-webfont.eot" />
-    <Content Include="Views\Wedding\css\futuralt-webfont.ttf" />
-    <Content Include="Views\Wedding\css\futuralt-webfont.woff" />
-    <Content Include="Views\Wedding\README.md" />
+    <Content Include="Views\Home\css\edwasai.eot" />
+    <Content Include="Views\Home\css\edwasai.ttf" />
+    <Content Include="Views\Home\css\edwasai.woff" />
+    <Content Include="Views\Home\css\edwasaib.eot" />
+    <Content Include="Views\Home\css\edwasaib.ttf" />
+    <Content Include="Views\Home\css\edwasaib.woff" />
+    <Content Include="Views\Home\css\futuralt-bold-webfont.eot" />
+    <Content Include="Views\Home\css\futuralt-bold-webfont.ttf" />
+    <Content Include="Views\Home\css\futuralt-bold-webfont.woff" />
+    <Content Include="Views\Home\css\futuralt-book-webfont.eot" />
+    <Content Include="Views\Home\css\futuralt-book-webfont.ttf" />
+    <Content Include="Views\Home\css\futuralt-book-webfont.woff" />
+    <Content Include="Views\Home\css\futuralt-webfont.eot" />
+    <Content Include="Views\Home\css\futuralt-webfont.ttf" />
+    <Content Include="Views\Home\css\futuralt-webfont.woff" />
+    <Content Include="Views\Home\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

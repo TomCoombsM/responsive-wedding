@@ -8,10 +8,13 @@ namespace Wedding.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(string returnUrl)
+        //
+        // GET: /Wedding/
+
+        public ActionResult Index()
         {
-            ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View("Index");
         }
+
     }
 }
