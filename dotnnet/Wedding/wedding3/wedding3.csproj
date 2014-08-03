@@ -208,7 +208,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Logs\UmbracoTraceLog.txt" />
-    <Content Include="App_Data\TEMP\ClientDependency\WORKPC-675b0a2f3898af23c24aaf21da4c4c64-map.xml" />
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="css\dummy.txt" />
     <Content Include="css\edwasai.svg" />
@@ -287,59 +286,6 @@
     <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2014-04-28" />
     <Content Include="App_Data\packages\created\createdPackages.config" />
     <Content Include="App_Data\packages\installed\installedPackages.config" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments_z" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.fdt" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.fdx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.fnm" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.frq" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.nrm" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.prx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.tii" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.tis" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.tvd" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.tvf" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k.tvx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_k_7.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_l.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_l_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_m.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_m_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_n.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_n_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_o.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_o_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_p.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_p_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_q.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_q_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_r.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments_1k" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.fdt" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.fdx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.fnm" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.frq" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.nrm" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.prx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.tii" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.tis" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.tvd" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.tvf" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e.tvx" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1e_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1f.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1f_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1g.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1g_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1h.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1h_1.del" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_1i.cfs" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.WORKPC.hash" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.WORKPC.list" />
-    <Content Include="App_Data\umbraco.config" />
     <None Include="Properties\PublishProfiles\tomandfab - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\tomandfab - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -364,8 +310,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\preview\" />
-    <Folder Include="App_Data\TEMP\FileUploads\" />
-    <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>
