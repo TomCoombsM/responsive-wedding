@@ -286,8 +286,8 @@
     <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2014-04-28" />
     <Content Include="App_Data\packages\created\createdPackages.config" />
     <Content Include="App_Data\packages\installed\installedPackages.config" />
-    <None Include="Properties\PublishProfiles\tomandfab - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\tomandfab - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\fabandtom - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\fabandtom - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
