@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\UmbracoCms.7.1.1\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.1.1\build\UmbracoCms.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -20,6 +21,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>58a07620</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +35,7 @@
     <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
     <IncludeIisSettings>false</IncludeIisSettings>
     <PublishDatabases>false</PublishDatabases>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,23 +44,97 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="businesslogic">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core">
+      <HintPath>..\packages\ClientDependency.1.7.1.2\lib\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core.Mvc">
+      <HintPath>..\packages\ClientDependency-Mvc.1.7.0.4\lib\ClientDependency.Core.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="cms">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\packages\xmlrpcnet.2.5.0\lib\net20\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Examine">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\Examine.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor">
+      <HintPath>..\packages\ImageProcessor.1.8.7.0\lib\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web">
+      <HintPath>..\packages\ImageProcessor.Web.3.2.1.0\lib\net45\ImageProcessor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Helpers">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\Microsoft.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler">
+      <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.6.5\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLCE4Umbraco">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\SQLCE4Umbraco.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -73,9 +151,6 @@
     <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -116,6 +191,40 @@
     <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TidyNet">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\TidyNet.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.DataLayer">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.editorControls">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.editorControls.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.MacroEngines">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.MacroEngines.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.providers">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.UI">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\Umbraco.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.XmlSerializers">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\umbraco.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="UmbracoExamine">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\UmbracoExamine.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter">
+      <HintPath>..\packages\UmbracoCms.Core.7.1.1\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
     </Reference>
     <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -202,11 +311,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WeddingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\BrideModel.cs" />
     <Compile Include="Models\TodoItemDto.cs" />
     <Compile Include="Models\TodoListDto.cs" />
     <Compile Include="Models\TodoList.cs" />
@@ -216,90 +326,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\de\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\de\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\de\System.Spatial.resources.dll" />
-    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
-    <Content Include="bin\DotNetOpenAuth.AspNet.xml" />
-    <Content Include="bin\DotNetOpenAuth.Core.dll" />
-    <Content Include="bin\DotNetOpenAuth.Core.xml" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.xml" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.xml" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.xml" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.xml" />
-    <Content Include="bin\EntityFramework.dll" />
-    <Content Include="bin\EntityFramework.xml" />
-    <Content Include="bin\es\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\es\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\es\System.Spatial.resources.dll" />
-    <Content Include="bin\fr\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\fr\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\fr\System.Spatial.resources.dll" />
-    <Content Include="bin\it\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\it\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\it\System.Spatial.resources.dll" />
-    <Content Include="bin\ja\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\ja\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\ja\System.Spatial.resources.dll" />
-    <Content Include="bin\ko\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\ko\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\ko\System.Spatial.resources.dll" />
-    <Content Include="bin\Microsoft.Data.Edm.dll" />
-    <Content Include="bin\Microsoft.Data.Edm.xml" />
-    <Content Include="bin\Microsoft.Data.OData.dll" />
-    <Content Include="bin\Microsoft.Data.OData.xml" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
-    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
-    <Content Include="bin\Microsoft.Web.WebPages.OAuth.xml" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\Newtonsoft.Json.xml" />
-    <Content Include="bin\ru\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\ru\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\ru\System.Spatial.resources.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.xml" />
-    <Content Include="bin\System.Spatial.dll" />
-    <Content Include="bin\System.Spatial.xml" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Helpers.xml" />
-    <Content Include="bin\System.Web.Http.dll" />
-    <Content Include="bin\System.Web.Http.OData.dll" />
-    <Content Include="bin\System.Web.Http.OData.xml" />
-    <Content Include="bin\System.Web.Http.Tracing.dll" />
-    <Content Include="bin\System.Web.Http.Tracing.xml" />
-    <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.xml" />
-    <Content Include="bin\System.Web.Http.xml" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Mvc.xml" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.xml" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="bin\WebMatrix.Data.dll" />
-    <Content Include="bin\WebMatrix.Data.xml" />
-    <Content Include="bin\WebMatrix.WebData.dll" />
-    <Content Include="bin\WebMatrix.WebData.xml" />
-    <Content Include="bin\Wedding.dll" />
-    <Content Include="bin\Wedding.pdb" />
-    <Content Include="bin\zh-Hans\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\zh-Hans\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Spatial.resources.dll" />
-    <Content Include="bin\zh-Hant\Microsoft.Data.Edm.resources.dll" />
-    <Content Include="bin\zh-Hant\Microsoft.Data.OData.resources.dll" />
-    <Content Include="bin\zh-Hant\System.Spatial.resources.dll" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -354,6 +380,15 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="css\dummy.txt" />
+    <Content Include="css\edwasai.svg" />
+    <Content Include="css\edwasaib.svg" />
+    <Content Include="css\futuralt-bold-webfont.svg" />
+    <Content Include="css\futuralt-book-webfont.svg" />
+    <Content Include="css\futuralt-webfont.svg" />
+    <Content Include="css\main-1.6.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -367,7 +402,39 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="bin\Wedding.dll.config" />
+    <Content Include="macroScripts\Web.config" />
+    <Content Include="css\edwasai.eot" />
+    <Content Include="css\edwasai.ttf" />
+    <Content Include="css\edwasai.woff" />
+    <Content Include="css\edwasaib.eot" />
+    <Content Include="css\edwasaib.ttf" />
+    <Content Include="css\edwasaib.woff" />
+    <Content Include="css\futuralt-bold-webfont.eot" />
+    <Content Include="css\futuralt-bold-webfont.ttf" />
+    <Content Include="css\futuralt-bold-webfont.woff" />
+    <Content Include="css\futuralt-book-webfont.eot" />
+    <Content Include="css\futuralt-book-webfont.ttf" />
+    <Content Include="css\futuralt-book-webfont.woff" />
+    <Content Include="css\futuralt-webfont.eot" />
+    <Content Include="css\futuralt-webfont.ttf" />
+    <Content Include="css\futuralt-webfont.woff" />
+    <Content Include="config\UrlRewriting.config" />
+    <Content Include="config\umbracoSettings.config" />
+    <Content Include="config\trees.config" />
+    <Content Include="config\tinyMceConfig.config" />
+    <Content Include="config\scripting.config" />
+    <Content Include="config\metablogConfig.config" />
+    <Content Include="config\log4net.config" />
+    <Content Include="config\FileSystemProviders.config" />
+    <Content Include="config\feedProxy.config" />
+    <Content Include="config\ExamineSettings.config" />
+    <Content Include="config\ExamineIndex.config" />
+    <Content Include="config\EmbeddedMedia.config" />
+    <Content Include="config\Dashboard.config" />
+    <Content Include="config\ClientDependency.config" />
+    <Content Include="config\BaseRestExtensions.config" />
+    <Content Include="config\applications.config" />
+    <Content Include="config\404handlers.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="img\bg-pic.jpg" />
     <Content Include="img\bradThumb.jpg" />
@@ -384,6 +451,9 @@
     <Content Include="js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
     <Content Include="js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
     <Content Include="js\vendor\waypoints.min.js" />
+    <Content Include="masterpages\dummy.txt" />
+    <Content Include="media\dummy.txt" />
+    <Content Include="Scripts\dummy.txt" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -398,38 +468,39 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\Home\apple-touch-icon-114x114-precomposed.png" />
-    <Content Include="Views\Home\apple-touch-icon-144x144-precomposed.png" />
-    <Content Include="Views\Home\apple-touch-icon-57x57-precomposed.png" />
-    <Content Include="Views\Home\apple-touch-icon-72x72-precomposed.png" />
-    <Content Include="Views\Home\apple-touch-icon-precomposed.png" />
-    <Content Include="Views\Home\apple-touch-icon.png" />
-    <Content Include="Views\Home\css\edwasai.svg" />
-    <Content Include="Views\Home\css\edwasaib.svg" />
-    <Content Include="Views\Home\css\futuralt-bold-webfont.svg" />
-    <Content Include="Views\Home\css\futuralt-book-webfont.svg" />
-    <Content Include="Views\Home\css\futuralt-webfont.svg" />
-    <Content Include="Views\Home\css\main-1.6.css" />
-    <Content Include="Views\Home\css\normalize.min.css" />
-    <Content Include="Views\Home\favicon.ico" />
-    <Content Include="Views\Home\img\bg-pic.jpg" />
-    <Content Include="Views\Home\img\bradThumb.jpg" />
-    <Content Include="Views\Home\img\heart-large.png" />
-    <Content Include="Views\Home\img\onknee-large.jpg" />
-    <Content Include="Views\Home\img\onknee-medium.jpg" />
-    <Content Include="Views\Home\img\onknee-small.jpg" />
-    <Content Include="Views\Home\img\sarahThumb.jpg" />
-    <Content Include="Views\Home\img\theinn-large.png" />
-    <Content Include="Views\Home\index-with-bridal-party.html" />
-    <None Include="Views\Home\index.cshtml" />
-    <Content Include="Views\Home\js\main-1.6.js" />
-    <Content Include="Views\Home\js\vendor\jquery-1.9.1.min.js" />
-    <Content Include="Views\Home\js\vendor\jquery-picture-min.js" />
-    <Content Include="Views\Home\js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
-    <Content Include="Views\Home\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
-    <Content Include="Views\Home\js\vendor\waypoints.min.js" />
-    <Content Include="Views\Home\LICENSE.txt" />
-    <Content Include="Views\Home\preview.png" />
+    <Content Include="usercontrols\dummy.txt" />
+    <Content Include="Views\Wedding\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="Views\Wedding\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="Views\Wedding\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="Views\Wedding\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="Views\Wedding\apple-touch-icon-precomposed.png" />
+    <Content Include="Views\Wedding\apple-touch-icon.png" />
+    <Content Include="Views\Wedding\css\edwasai.svg" />
+    <Content Include="Views\Wedding\css\edwasaib.svg" />
+    <Content Include="Views\Wedding\css\futuralt-bold-webfont.svg" />
+    <Content Include="Views\Wedding\css\futuralt-book-webfont.svg" />
+    <Content Include="Views\Wedding\css\futuralt-webfont.svg" />
+    <Content Include="Views\Wedding\css\main-1.6.css" />
+    <Content Include="Views\Wedding\css\normalize.min.css" />
+    <Content Include="Views\Wedding\favicon.ico" />
+    <Content Include="Views\Wedding\img\bg-pic.jpg" />
+    <Content Include="Views\Wedding\img\bradThumb.jpg" />
+    <Content Include="Views\Wedding\img\heart-large.png" />
+    <Content Include="Views\Wedding\img\onknee-large.jpg" />
+    <Content Include="Views\Wedding\img\onknee-medium.jpg" />
+    <Content Include="Views\Wedding\img\onknee-small.jpg" />
+    <Content Include="Views\Wedding\img\sarahThumb.jpg" />
+    <Content Include="Views\Wedding\img\theinn-large.png" />
+    <Content Include="Views\Wedding\index-with-bridal-party.html" />
+    <None Include="Views\Wedding\index.cshtml" />
+    <Content Include="Views\Wedding\js\main-1.6.js" />
+    <Content Include="Views\Wedding\js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="Views\Wedding\js\vendor\jquery-picture-min.js" />
+    <Content Include="Views\Wedding\js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
+    <Content Include="Views\Wedding\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="Views\Wedding\js\vendor\waypoints.min.js" />
+    <Content Include="Views\Wedding\LICENSE.txt" />
+    <Content Include="Views\Wedding\preview.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -461,25 +532,27 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\css\edwasai.eot" />
-    <Content Include="Views\Home\css\edwasai.ttf" />
-    <Content Include="Views\Home\css\edwasai.woff" />
-    <Content Include="Views\Home\css\edwasaib.eot" />
-    <Content Include="Views\Home\css\edwasaib.ttf" />
-    <Content Include="Views\Home\css\edwasaib.woff" />
-    <Content Include="Views\Home\css\futuralt-bold-webfont.eot" />
-    <Content Include="Views\Home\css\futuralt-bold-webfont.ttf" />
-    <Content Include="Views\Home\css\futuralt-bold-webfont.woff" />
-    <Content Include="Views\Home\css\futuralt-book-webfont.eot" />
-    <Content Include="Views\Home\css\futuralt-book-webfont.ttf" />
-    <Content Include="Views\Home\css\futuralt-book-webfont.woff" />
-    <Content Include="Views\Home\css\futuralt-webfont.eot" />
-    <Content Include="Views\Home\css\futuralt-webfont.ttf" />
-    <Content Include="Views\Home\css\futuralt-webfont.woff" />
-    <Content Include="Views\Home\README.md" />
+    <Content Include="Views\Wedding\css\edwasai.eot" />
+    <Content Include="Views\Wedding\css\edwasai.ttf" />
+    <Content Include="Views\Wedding\css\edwasai.woff" />
+    <Content Include="Views\Wedding\css\edwasaib.eot" />
+    <Content Include="Views\Wedding\css\edwasaib.ttf" />
+    <Content Include="Views\Wedding\css\edwasaib.woff" />
+    <Content Include="Views\Wedding\css\futuralt-bold-webfont.eot" />
+    <Content Include="Views\Wedding\css\futuralt-bold-webfont.ttf" />
+    <Content Include="Views\Wedding\css\futuralt-bold-webfont.woff" />
+    <Content Include="Views\Wedding\css\futuralt-book-webfont.eot" />
+    <Content Include="Views\Wedding\css\futuralt-book-webfont.ttf" />
+    <Content Include="Views\Wedding\css\futuralt-book-webfont.woff" />
+    <Content Include="Views\Wedding\css\futuralt-webfont.eot" />
+    <Content Include="Views\Wedding\css\futuralt-webfont.ttf" />
+    <Content Include="Views\Wedding\css\futuralt-webfont.woff" />
+    <Content Include="Views\Wedding\README.md" />
+    <Content Include="xslt\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="config\splashes\" />
     <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
@@ -513,6 +586,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.1.1\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.1.1\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.1.1\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.1.1\build\UmbracoCms.targets'))" />
+  </Target>
+  <Import Project="..\packages\UmbracoCms.7.1.1\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.1.1\build\UmbracoCms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.                                                                                      
        Other similar extension points exist, see Microsoft.Common.targets.                                                                                                                
   <Target Name="BeforeBuild">                                                                                                                                                             

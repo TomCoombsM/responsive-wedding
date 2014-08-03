@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+  <baseType type="umbraco.interfaces.IApplicationStartupHandler" resolutionType="FindAllTypes">
+    <add type="umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.5211.22378, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.5211.22378, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.5211.22380, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.5211.22383, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Cache.CacheRefresherEventHandler, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.LogModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.MacroModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.MemberModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.TabModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.DataTypeModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.EntityModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Migrations.ClearCsrfCookiesAfterUpgrade, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Migrations.ClearMediaXmlCacheForDeletedItemsAfterUpgrade, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.NotificationsHandler, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.ContentPropertyModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.MediaModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.ContentTypeModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.ContentModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.SectionModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Models.Mapping.UserModelMapper, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Trees.ApplicationTreeRegistrar, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Migrations.RebuildMediaXmlCacheAfterUpgrade, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.PublicAccessEventHandler, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.LegacyScheduledTasks, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Search.ExamineEvents, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.DataTypes.LegacyUploadFieldWorkaround, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Migrations.PublishAfterUpgradeToVersionSixth, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Publishing.UpdateCacheAfterPublish, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Publishing.UpdateCacheAfterUnPublish, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.Migrations.EnsureAppsTreesUpdatedOnUpgrade, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Strategies.ServerRegistrationEventHandler, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.presentation.nodeFactory.UmbracoSiteMapProviderAccessUpdate, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.presentation.EnsureSystemPathsApplicationStartupHandler, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.presentation.umbraco.Search.ExamineEvents, umbraco, Version=1.0.5211.22381, Culture=neutral, PublicKeyToken=null" />
+  </baseType>
+</plugins>

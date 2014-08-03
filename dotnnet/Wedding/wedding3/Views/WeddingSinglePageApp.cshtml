@@ -1,0 +1,282 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>@CurrentPage.Title</title>
+        <meta name="description" content="Welcome to the wedding website for Fab and Tom's' Big Day!">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- For iPhone 4 with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+        <!-- For first-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+        <link rel="shortcut icon" href="favicon.ico?v=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main-1.6.css">
+
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="bg-image">
+            <img src="../img/ratring.jpg" alt="bg" />
+        </div>
+
+        <div id="bg-container">
+
+            <div class="header-container">
+                <div id="heading" class="wrapper clearfix">
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#brideandgroom">THE BRIDE &amp; GROOM</a></li>
+                            <li><a href="#wedding">WEDDING</a></li>
+                            <li><a href="#accomodations">ACCOMODATIONS</a></li>
+                            <li><a href="#registry">STUFF</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="main wrapper clearfix">
+
+                    <header>
+                        <div id="introtext">
+                            <span class="head-sarah">Fab</span>
+                            <span class="head-sarah">
+                                &nbsp;
+                                <span class="amp">&amp;</span>
+                                Tom
+                            </span>
+                            <div class="date">JULY 12<sup>th</sup>, 2014</div>
+                        </div>
+
+                      
+                    </header>
+
+                    <div class="clearfix"></div>
+
+                    <section id="brideandgroom" class="clearfix">
+
+                        <h1>The Bride and Groom</h1>
+                                
+                        <div class="column left">
+
+                            <h2>Fabienne</h2>
+                            <p>
+                                <img src="../img/sarahThumb.jpg" class="thumb" alt="Sarah" />
+                                @CurrentPage.FabDes
+                        </div><!--end column-->
+                        <div class="column right">
+
+                            <h2>Tom</h2>
+                            <p>
+                                <img src="../img/bradThumb.jpg" class="thumb" alt="Brad" />
+                                @CurrentPage.TomDes</p>
+
+                        </div><!--end column-->
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <div class="column full">
+
+                            <h2>HOW WE MET</h2>
+                            <p>@CurrentPage.howWeMet</p>
+
+                        </div><!--end column-->
+
+                        <div class="column full">
+                             
+                            
+                            <img src="@CurrentPage.Image" alt="Brad Proposing To hhh" />
+                              
+                       
+
+                            <h2>THE ENGAGEMENT</h2>
+                            <p>@CurrentPage.tHEENGAGEMENT</p>
+                                                        
+                        </div><!--end column-->
+
+                    </section>
+
+                    <section id="wedding" class="clearfix">
+
+                        <h1>Wedding</h1>
+
+                        <div class="column left">
+                            <h2>CEREMONY</h2>
+                            <p>
+                               @CurrentPage.theCEREMONY
+                            </p>
+                            
+
+
+                        </div><!--end column--> 
+                        <div class="column right">
+                            <h2>SCHEDULE OF EVENTS</h2>
+                            <p>
+                                Rehearsal Dinner <br />
+                                Thursday, September 5th at 8pm<br /><br />
+                                Golf <br />
+                                Friday, September 6th at 9am<br /><br />
+                                Ceremony <br />
+                                Friday, September 6th at 6pm (reception to follow)<br /><br />
+                                Breakfast &amp; Bocce <br />
+                                Saturday, September 7th at 10am<br />
+                            </p>
+                        </div><!--end column--> 
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <h2>BRIDAL PARTY</h2>
+
+                        <div class="column left bp">
+                            
+                            <h2>Hens </h2>
+                            <div class="column left">
+                                <p>
+                                @CurrentPage.Hens<br />
+                                </p>
+                            </div>
+                            <div class="column right">
+                                <p>
+                                </p>
+                            </div>
+
+                        </div><!--end column--> 
+                        <div class="column right bp">
+
+                            <h2>Stags</h2> 
+                            <div class="column left">
+                                <p>
+                                @CurrentPage.Stags<br />
+                                </p>
+                            </div>
+                            <div class="column right">
+                                <p>
+                                </p>
+                            </div>
+
+                        </div><!--end column-->           
+                    </section>
+
+                    <section id="accomodations" class="clearfix">
+
+                        <h1>Accomodations</h1>
+
+                        <div class="column left">
+
+                            <h2>HOTELS</h2>
+                            <p>
+                              @CurrentPage.Hotels
+                            </p>
+                        </div><!--end column-->
+
+                        <div class="column right">
+                            <h2>DIRECTIONS</h2>
+                            <p>
+                                @CurrentPage.Dirs
+                            </p>
+                            
+                        </div><!--end column-->
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <div class="column full">
+
+                            <h2>VICINITY MAP</h2>
+
+                            <div id="gmap">
+                                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=La+Verpilli%C3%A8re,+France&amp;aq=0&amp;oq=la+verp&amp;sll=37.0625,-95.677068&amp;sspn=45.957536,101.513672&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=La+Verpilli%C3%A8re,+Isere,+Rhone-Alpes,+France&amp;ll=45.636822,5.143259&amp;spn=0.039848,0.099134&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=La+Verpilli%C3%A8re,+France&amp;aq=0&amp;oq=la+verp&amp;sll=37.0625,-95.677068&amp;sspn=45.957536,101.513672&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=La+Verpilli%C3%A8re,+Isere,+Rhone-Alpes,+France&amp;ll=45.636822,5.143259&amp;spn=0.039848,0.099134&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <div class="column full">
+                            <h2>About the location</h2>
+                            <p>
+
+                            </p>
+                        </div><!--end column-->
+            
+                        <div class="column full">
+                            <h2>More stuff</h2>
+        
+                                @CurrentPage.Stuff1
+                          
+                        </div><!--end column-->
+
+                    </section>
+
+                    <section id="registry" class="clearfix">
+
+                        <h1>More stuff</h1>
+
+                        <div class="column full">
+                        
+                            @CurrentPage.Stuff2
+                            
+                        </div><!--end column-->
+               
+                    </section>
+
+                    <div style="height: 300px"></div>
+
+                </div> <!-- #main -->
+            </div> <!-- #main-container -->
+        </div> <!-- #bg-container -->
+
+        <script src="../js/main-1.6.js"></script>
+
+        <script>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-XXXXXXX-XX']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</html>
