@@ -226,12 +226,16 @@
     <Content Include="img\ratring.jpg" />
     <Content Include="img\sarahThumb.jpg" />
     <Content Include="img\theinn-large.png" />
+    <Content Include="js\angular-route.min.js" />
+    <Content Include="js\app.js" />
     <Content Include="js\main-1.6.js" />
+    <Content Include="js\mainController.js" />
     <Content Include="js\vendor\jquery-1.9.1.min.js" />
     <Content Include="js\vendor\jquery-picture-min.js" />
     <Content Include="js\vendor\jquery.scrollTo-1.4.3.1-min.js" />
     <Content Include="js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
     <Content Include="js\vendor\waypoints.min.js" />
+    <Content Include="ng-views\main.html" />
     <Content Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="macroScripts\Web.config" />
@@ -306,6 +310,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

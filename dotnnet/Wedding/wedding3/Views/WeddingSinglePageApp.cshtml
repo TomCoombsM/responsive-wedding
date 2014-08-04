@@ -29,6 +29,10 @@
         <link rel="stylesheet" href="../css/main-1.6.css">
 
         <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+        <script src="~/js/angular-route.min.js"></script>
+        <script src="~/js/app.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -249,7 +253,11 @@
 
                     <section id="registry" class="clearfix">
 
-                        <h1>More stuff</h1>
+                        <h1>Reservations</h1>
+                        <div ng-app="reservations">
+                            <div ng-view>
+                            </div>
+                        </div>
 
                         <div class="column full">
                         
