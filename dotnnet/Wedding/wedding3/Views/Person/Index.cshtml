@@ -1,0 +1,29 @@
+﻿@model List<DataLayer.Person>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/css/PersonPage.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>Wedding registrations</h1>
+
+        @{
+
+            foreach (var person in Model)
+            {
+
+                <h2>@person.Name</h2>
+                <p>@person.Email</p>
+
+
+            }
+        }
+    </div>
+</body>
+</html>
