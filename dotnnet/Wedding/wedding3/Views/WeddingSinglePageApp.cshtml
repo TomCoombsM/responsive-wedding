@@ -41,7 +41,7 @@
         <![endif]-->
         
         <div id="bg-image">
-            <img src="../img/ratring.jpg" alt="bg" />
+            <img src="../img/ft.jpg" alt="bg" />
         </div>
 
         <div id="bg-container">
@@ -116,12 +116,21 @@
                         <div class="column full">
                              
                             
-                            <img src="@CurrentPage.Image" alt="Brad Proposing To hhh" />
                               
-                       
+                            <figure class="responsive-image proposal" data-media="@CurrentPage.Image" data-media480="@CurrentPage.Image" data-media768="@CurrentPage.Image" data-media1140="@CurrentPage.Image" title="Where they met - Primrose hill">
+                                <noscript>
+                                    <img src="@CurrentPage.Image" alt="Where they met - Primrose hill" />
+                                </noscript>
+                            </figure>
 
                             <h2>THE ENGAGEMENT</h2>
                             <p>@CurrentPage.tHEENGAGEMENT</p>
+
+                            <figure class="responsive-image proposal" data-media="/img/ratring.jpg" title="The proposal spot">
+                                <noscript>
+                                    <img src="/img/ratring.jpg" alt="The proposal spot" />
+                                </noscript>
+                            </figure>
                                                         
                         </div><!--end column-->
 
@@ -137,61 +146,71 @@
                                @CurrentPage.theCEREMONY
                             </p>
                             
-
+                           
 
                         </div><!--end column--> 
                         <div class="column right">
                             <h2>SCHEDULE OF EVENTS</h2>
                             <p>
                                 Rehearsal Dinner <br />
-                                Thursday, September 5th at 8pm<br /><br />
-                                Golf <br />
-                                Friday, September 6th at 9am<br /><br />
-                                Ceremony <br />
-                                Friday, September 6th at 6pm (reception to follow)<br /><br />
-                                Breakfast &amp; Bocce <br />
-                                Saturday, September 7th at 10am<br />
+                                Friday, August 28th at 20:00<br /><br />
+                                Civil Ceremony.<br /> La Verpilliere marie (Walk from Fabienne's Mum's house) <br />
+                                Saturday, August 28th at 11:00<br /><br />
+                                Church Ceremony. <br />La Verpilliere church (Walk from Fabienne's Mum's house) <br />
+                                Saturday, August 28th at 15:30<br /><br />
+                                Reception <br />
+                                Saturday, August 28th drive from church. Château Chapeau Cornu. <br />
                             </p>
                         </div><!--end column--> 
 
                         <div class="clearfix"></div>
 
                         <div class="column full">
-                            <div class="hr-t"></div>
-                            <div class="hr-b"></div>
-                        </div>
+                            <figure id="i1" class="responsive-image proposal" data-media="@CurrentPage.CermonyImage1 " title="Where they met - Primrose hill">
 
-                        <h2>BRIDAL PARTY</h2>
+                            </figure>
 
-                        <div class="column left bp">
-                            
-                            <h2>Hens </h2>
-                            <div class="column left">
-                                <p>
-                                @CurrentPage.Hens<br />
-                                </p>
-                            </div>
-                            <div class="column right">
-                                <p>
-                                </p>
+                            <figure id="i2" class="responsive-image proposal" data-media="@CurrentPage.CermonyImage2" title="Where they met - Primrose hill">
+
+                            </figure>
                             </div>
 
-                        </div><!--end column--> 
-                        <div class="column right bp">
-
-                            <h2>Stags</h2> 
-                            <div class="column left">
-                                <p>
-                                @CurrentPage.Stags<br />
-                                </p>
-                            </div>
-                            <div class="column right">
-                                <p>
-                                </p>
+                            <div class="column full">
+                                <div class="hr-t"></div>
+                                <div class="hr-b"></div>
                             </div>
 
-                        </div><!--end column-->           
-                    </section>
+                            <h2>Stags and hens</h2>
+
+                            <div class="column left bp">
+
+                                <h2>Hens </h2>
+                                <div class="column left">
+                                    <p>
+                                        @CurrentPage.Hens<br />
+                                    </p>
+                                </div>
+                                <div class="column right">
+                                    <p>
+                                    </p>
+                                </div>
+
+                            </div><!--end column-->
+                            <div class="column right bp">
+
+                                <h2>Stags</h2>
+                                <div class="column left">
+                                    <p>
+                                        @CurrentPage.Stags<br />
+                                    </p>
+                                </div>
+                                <div class="column right">
+                                    <p>
+                                    </p>
+                                </div>
+
+                            </div><!--end column-->
+</section>
 
                     <section id="accomodations" class="clearfix">
 
@@ -237,14 +256,7 @@
                         </div>
 
                         <div class="column full">
-                            <h2>About the location</h2>
-                            <p>
-
-                            </p>
-                        </div><!--end column-->
-            
-                        <div class="column full">
-                            <h2>More stuff</h2>
+                            <h2></h2>
         
                                 @CurrentPage.Stuff1
                           

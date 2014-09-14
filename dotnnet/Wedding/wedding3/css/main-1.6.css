@@ -814,13 +814,9 @@ section h2 {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    width:90%;
 }
 
-img.theinn  {
-
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 div.bp h2 {
     margin: 0;

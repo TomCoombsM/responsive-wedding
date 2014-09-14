@@ -236,12 +236,15 @@
     <Content Include="css\PersonPage.css" />
     <Content Include="img\bg-pic.jpg" />
     <Content Include="img\bradThumb.jpg" />
+    <Content Include="img\ft.jpg" />
     <Content Include="img\heart-large.png" />
+    <Content Include="img\newFront.jpg" />
     <Content Include="img\onknee-large.jpg" />
     <Content Include="img\onknee-medium.jpg" />
     <Content Include="img\onknee-small.jpg" />
     <Content Include="img\rat.jpg" />
     <Content Include="img\ratring.jpg" />
+    <Content Include="img\rats.jpg" />
     <Content Include="img\sarahThumb.jpg" />
     <Content Include="img\theinn-large.png" />
     <Content Include="img\tom.jpg" />
@@ -329,7 +332,9 @@
     <Content Include="media\dummy.txt" />
     <Content Include="scripts\dummy.txt" />
     <Content Include="usercontrols\dummy.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\PersonController.cs" />
