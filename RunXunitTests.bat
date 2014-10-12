@@ -1,1 +1,1 @@
-.\dotnnet\Wedding\packages\xunit.runners.1.9.2\tools\xunit.console.clr4.x86.exe .\dotnnet\Wedding\Coombs.Wedding.Tests\bin\Coombs.Wedding.Tests.dll /xmlfile tests.xml
+.\dotnnet\Wedding\packages\xunit.runners.1.9.2\tools\xunit.console.clr4.x86.exe .\dotnnet\Wedding\Coombs.Wedding.Tests\bin\Coombs.Wedding.Tests.dll /xml tests.xml
