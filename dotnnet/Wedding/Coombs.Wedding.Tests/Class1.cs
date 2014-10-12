@@ -12,7 +12,7 @@ namespace Coombs.Wedding.Tests
         [Fact]
         public void Test1()
         {
-            Assert.Equal(5, 2 + 2);
+            Assert.Equal(4, 2 + 2);
         }
     }
 }
